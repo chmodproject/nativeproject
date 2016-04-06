@@ -1,0 +1,96 @@
+<div class="col-md-12">
+<form class="form-horizontal" id="registrationform" action="{action}" method="post">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Registration Form</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="personal_identification">Personal Identification</label>  
+  <div class="col-md-5">
+  <input id="personal_identification" name="personal_id" type="number" minlength="7" maxlength="7" placeholder="Personal Identification" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="first_name">First Name</label>  
+  <div class="col-md-5">
+  <input id="first_name" name="first_name" type="text" placeholder="First Name" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="last_name">Last Name</label>  
+  <div class="col-md-5">
+  <input id="last_name" name="last_name" type="text" placeholder="Last Name" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="title">Title</label>
+  <div class="col-md-5">
+    <select id="title" name="title" class="form-control">
+      <option value="1">Mr</option>
+      <option value="2">Ms</option>
+      <option value="3">Mrs</option>
+      <option value="4">Miss</option>
+    </select>
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="gender">Sex</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="gender-0">
+      <input type="radio" name="sex" id="gender0" value="1" checked="checked">
+      Male
+    </label>
+	</div>
+  <div class="radio">
+    <label for="gender-1">
+      <input type="radio" name="sex" id="gender1" value="2">
+      FeMale
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="citizenship ">Citizenship </label>
+  <div class="col-md-5">
+    <select id="citizenship" name="country_code" class="form-control" required="">
+      {country}
+    </select>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="comments">Comments</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="comments" name="comments"></textarea>
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-8">
+    <input id="submit" type="submit" class="btn btn-success" value="Submit">
+    <input id="reset" type="button " class="btn btn-warning" style="width:90px" value="Reset">
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
