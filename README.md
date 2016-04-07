@@ -1,8 +1,8 @@
 # nativeproject
-my native project, just a simple lightweight mvc framework that can be used instantly without any more setup.
+my side project,a lightweight mvc framework that can be used instantly without any more setup.
 component includes:
-simple IOc
-routes
-config
-app modules
+ioc,
+routes,
+config,
+app modules.
 
